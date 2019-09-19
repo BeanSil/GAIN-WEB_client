@@ -4,9 +4,9 @@ import {Route} from "react-router-dom"
 import {ConnectedRouter} from "connected-react-router";
 import {Provider} from "react-redux";
 
-// 컨테이너 모듈
-import Counter from "./components/Counter/Counter"
-import Todo from "./components/Todo/Todo"
+
+import {Home, Main} from './pages'
+// 페이지 모듈
 
 
 class App extends React.Component {
@@ -30,8 +30,8 @@ class App extends React.Component {
 
 const RoutesComponent = () => (
   <Fragment>
-    <Route exact path="/" component={Counter} />
-    <Route exact path="/todo" component={Todo} />
+    <Route exact path="/" component={Main} />
+    <Route exact path="/Home" component={Home} />
   </Fragment>
 )
 
